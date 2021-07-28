@@ -1,0 +1,6 @@
+In admin allocation report file, "RCAP Distribution Code" should be listed in column A for any employee who has it
+	- program searches for "RCAP" substring so no cell in that column should have the word "RCAP" in it unless it is the distribution code cell
+	-hours are listed in column D
+	-distribution code also listed in column D (eg: DB, GH, etc.)
+	-after finding "RCAP", program finds previous cell in col D that contains text that is not "hours"
+		-this means that every employee must have a distribution code that is a string and that no other strings should exist in column D beside "hours"
